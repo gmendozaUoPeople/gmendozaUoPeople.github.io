@@ -425,94 +425,71 @@
             color: var(--muted);
         }
 </section>
+        
+/* =========================
+   DASHBOARD SHOWCASE
+========================= */
 
-<!-- =========================
-     DASHBOARD SHOWCASE
-========================= -->
+#showcase {
+    background: #faf8fc;
+}
 
-<section id="showcase">
+.showcase-grid {
+    display: grid;
 
-    <div class="section-heading">
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(300px, 1fr)
+    );
 
-        <div class="section-label">
-            See It In Action
-        </div>
+    gap: 25px;
+}
 
-        <h2>Dashboard Showcase</h2>
+.showcase-card {
+    background: white;
 
-        <p class="section-intro">
-            A look at the Early Warning Student Success Dashboard
-            and the user interface developed for the project.
-        </p>
+    border-radius: 18px;
 
-    </div>
+    overflow: hidden;
 
+    border: 1px solid var(--border);
 
-    <div class="showcase-grid">
+    box-shadow: 0 10px 30px rgba(92, 71, 125, 0.08);
 
-        <div class="showcase-card">
+    transition: all 0.25s ease;
+}
 
-            <img
-                src="images/dashboard-home.png"
-                alt="Early Warning Student Success Dashboard home screen">
+.showcase-card:hover {
+    transform: translateY(-6px);
 
-            <div class="showcase-caption">
+    box-shadow: 0 18px 40px rgba(92, 71, 125, 0.14);
+}
 
-                <h3>Dashboard Overview</h3>
+.showcase-card img {
+    width: 100%;
 
-                <p>
-                    The main dashboard provides educators with an
-                    overview of student information and risk indicators.
-                </p>
+    height: 230px;
 
-            </div>
+    object-fit: cover;
 
-        </div>
+    display: block;
+}
 
+.showcase-caption {
+    padding: 25px;
+}
 
-        <div class="showcase-card">
+.showcase-caption h3 {
+    color: var(--deep-purple);
 
-            <img
-                src="images/student-list.png"
-                alt="Student list displayed in the Early Warning Student Success Dashboard">
+    margin-bottom: 8px;
+}
 
-            <div class="showcase-caption">
+.showcase-caption p {
+    color: var(--muted);
 
-                <h3>Student Information</h3>
-
-                <p>
-                    The student view allows educators to review
-                    individual student information and identify
-                    students who may need additional support.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="showcase-card">
-
-            <img
-                src="images/student-risk.png"
-                alt="Student risk information displayed in the dashboard">
-
-            <div class="showcase-caption">
-
-                <h3>Risk Indicators</h3>
-
-                <p>
-                    Risk indicators help educators quickly identify
-                    students who may benefit from intervention.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+    font-size: 0.92rem;
+}
         
         /* =========================
            TECHNOLOGIES
@@ -1032,6 +1009,95 @@
 
 </section>
 
+</section>
+
+<!-- =========================
+     DASHBOARD SHOWCASE
+========================= -->
+
+<section id="showcase">
+
+    <div class="section-heading">
+
+        <div class="section-label">
+            See It In Action
+        </div>
+
+        <h2>Dashboard Showcase</h2>
+
+        <p class="section-intro">
+            A look at the Early Warning Student Success Dashboard
+            and the user interface developed for the project.
+        </p>
+
+    </div>
+
+
+    <div class="showcase-grid">
+
+        <div class="showcase-card">
+
+            <img
+                src="images/dashboard-home.png"
+                alt="Early Warning Student Success Dashboard home screen">
+
+            <div class="showcase-caption">
+
+                <h3>Dashboard Overview</h3>
+
+                <p>
+                    The main dashboard provides educators with an
+                    overview of student information and risk indicators.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="showcase-card">
+
+            <img
+                src="images/student-list.png"
+                alt="Student list displayed in the Early Warning Student Success Dashboard">
+
+            <div class="showcase-caption">
+
+                <h3>Student Information</h3>
+
+                <p>
+                    The student view allows educators to review
+                    individual student information and identify
+                    students who may need additional support.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="showcase-card">
+
+            <img
+                src="images/student-risk.png"
+                alt="Student risk information displayed in the dashboard">
+
+            <div class="showcase-caption">
+
+                <h3>Risk Indicators</h3>
+
+                <p>
+                    Risk indicators help educators quickly identify
+                    students who may benefit from intervention.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 <!-- =========================
      TECHNOLOGIES
